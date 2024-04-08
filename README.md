@@ -19,7 +19,7 @@ Ti_SK68/SDK9.1 comes with python demo about interence.
 /opt/edgeai-dl-inferer/tests/test_python/app_dl_inferer_test.py
 <br>
 app_dl_inferer_test.py call app_dl_inferer_post_process.py to draw rectangle.  
-Adding some code in call app_dl_inferer_post_process.py to output rectangle X1Y1X2Y2.  
+Adding some code in app_dl_inferer_post_process.py to output rectangle X1Y1X2Y2.  
 <br>
 
 # IN PROGRESS ...
