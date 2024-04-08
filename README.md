@@ -12,4 +12,8 @@ Thus, my plan,
 
 ![pic](pic/pic1.jpg)<br><br><br>
 
+The command to stop Ti_SK68 demo:  
+/etc/init.d/edgeai-launcher.sh stop  
+
+
 # IN PROGRESS ...
