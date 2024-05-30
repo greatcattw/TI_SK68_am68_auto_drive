@@ -1,3 +1,4 @@
+# IN PROGRESS ...
 # TI_SK68_am68_auto_drive
 Using Ti am68 to implement toy car auto drive.  
 Using TI am68 to detect signs for auto driving.  
@@ -22,4 +23,4 @@ app_dl_inferer_test.py call app_dl_inferer_post_process.py to draw rectangle.
 Adding some code in app_dl_inferer_post_process.py to output rectangle X1Y1X2Y2.  
 <br>
 
-# IN PROGRESS ...
+
