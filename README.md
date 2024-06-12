@@ -35,12 +35,21 @@ Then, you get a jpg file of detection_output0_ONR-OD-8200-yolox-nano-lite-mmdet-
 
 ## Using handmade ad25e250 and orange toy traffic cone
 Made by model composer.(2024/06)  
-### test
-Copy ad25e250 to /opt/model_zoo/  
+### test_1
+Copy ad25e250/ to /opt/model_zoo/  
 Reboot system  
 The [Custom] Model add item of ad25e250. Run it with Camera / USB Camera 0  
-
-
+<br>
+### test_2
+copy pic_test/cones.jpg to am68 /tmp by scp/ssh.  
+run:  
+cd /opt/edgeai-dl-inferer/tests/test_python  
+python3 app_dl_inferer_test.py -d /opt/model_zoo/ad25e250/  -v 0.3 -i /tmp/cones.jpg  
+Then, you get a jpg file of detection_output0_ad25e250.jpg at   
+/opt/edgeai-dl-inferer/tests/test_python  
+![pic](pic/detection_output0_ad25e250.jpg)<br>
+<br>
+<br>
 # other resource
 ## disable out-box demo
 /etc/init.d/edgeai-launcher.sh stop  
