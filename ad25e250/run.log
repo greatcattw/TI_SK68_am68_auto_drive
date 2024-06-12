@@ -1,0 +1,222 @@
+
+INFO:20240611-035817: running - od-8200
+INFO:20240611-035817: pipeline_config - {'task_type': 'detection', 'dataset_category': 'coco', 'calibration_dataset': <edgeai_benchmark.datasets.modelmaker_datasets.ModelMakerDetectionDataset object at 0x7fd6d9166ce0>, 'input_dataset': <edgeai_benchmark.datasets.modelmaker_datasets.ModelMakerDetectionDataset object at 0x7fd6d848fc10>, 'preprocess': <edgeai_benchmark.preprocess.PreProcessTransforms object at 0x7fd60996d4e0>, 'session': <edgeai_benchmark.sessions.onnxrt_session.ONNXRTSession object at 0x7fd60996d480>, 'postprocess': <edgeai_benchmark.postprocess.PostProcessTransforms object at 0x7fd60996fdc0>, 'metric': {'label_offset_pred': 1}, 'model_info': {'metric_reference': {'accuracy_ap[.5:.95]%': None}, 'model_shortlist': 10}}
+INFO:20240611-035817: import  - od-8200 - this may take some time...yolox is meta arch name 
+yolox
+Number of OD backbone nodes = 192 
+Size of odBackboneNodeIds = 192 
+
+Preliminary subgraphs created = 1 
+Final number of subgraphs created are : 1, - Offloaded Nodes - 283, Total Nodes - 283 
+ Graph Domain TO version : 11TIDL Meta PipeLine (Proto) File  : /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/model/model.prototxt  
+yolox
+yolox
+Warning : Requested Output Data Convert Layer is not Added to the network, It is currently not Optimal
+Warning : Requested Output Data Convert Layer is not Added to the network, It is currently not Optimal
+
+ ************** Frame index 1 : Running float import ************* 
+INFORMATION: [TIDL_ResizeLayer] /neck/upsample/Resize Any resize ratio which is power of 2 and greater than 4 will be placed by combination of 4x4 resize layer and 2x2 resize layer. For example a 8x8 resize will be replaced by 4x4 resize followed by 2x2 resize.
+INFORMATION: [TIDL_ResizeLayer] /neck/upsample_1/Resize Any resize ratio which is power of 2 and greater than 4 will be placed by combination of 4x4 resize layer and 2x2 resize layer. For example a 8x8 resize will be replaced by 4x4 resize followed by 2x2 resize.
+****************************************************
+**          2 WARNINGS          0 ERRORS          **
+****************************************************
+The soft limit is 2048
+The hard limit is 2048
+MEM: Init ... !!!
+MEM: Init ... Done !!!
+ 0.0s:  VX_ZONE_INIT:Enabled
+ 0.4s:  VX_ZONE_ERROR:Enabled
+ 0.5s:  VX_ZONE_WARNING:Enabled
+ 0.1817s:  VX_ZONE_INIT:[tivxInit:185] Initialization Done !!!
+
+**********  Frame Index 1 : Running float inference **********
+ Graph Domain TO version : 11
+**********  Frame Index 2 : Running float inference **********
+ Graph Domain TO version : 11
+**********  Frame Index 3 : Running float inference **********
+ Graph Domain TO version : 11
+**********  Frame Index 4 : Running float inference **********
+ Graph Domain TO version : 11
+**********  Frame Index 5 : Running fixed point mode for calibration **********
+Asymmetric quantization with calib = 4
+Parameters unavailable, running calibration!
+
+Processing config file #0 : /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/artifacts/tempDir/detslabels_tidl_io_.qunat_stats_config.txt 
+
+~~~~~Running TIDL in PC emulation mode to collect Activations range for each layer~~~~~
+ Freeing memory for user provided Net
+ ----------------------- TIDL Process with REF_ONLY FLOW ------------------------
+
+#    0 . .. T    3937.87  .... ..... ... .... .....
+#    1 . .. T    3929.23  .... ..... ... .... .....
+#    2 . .. T    3930.57  .... ..... ... .... .....
+#    3 . .. T    3932.39  .... ..... ... .... .....
+#    4 . .. T    3931.31  .... ..... ... .... .....
+ 
+ 
+ *****************   Calibration iteration number 0 started ************************ 
+ 
+ 
+ 
+Parameters unavailable, running calibration!
+
+Processing config file #0 : /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/artifacts/tempDir/detslabels_tidl_io_.qunat_stats_config.txt 
+
+~~~~~Running TIDL in PC emulation mode to collect Activations range for each layer~~~~~
+ Freeing memory for user provided Net
+ ----------------------- TIDL Process with REF_ONLY FLOW ------------------------
+
+#    0 . .. T    2470.13  .... ..... ... .... .....
+#    1 . .. T    2466.61  .... ..... ... .... .....
+#    2 . .. T    2505.79  .... ..... ... .... .....
+#    3 . .. T    2468.88  .... ..... ... .... .....
+#    4 . .. T    2468.27  .... ..... ... .... .....
+ 
+ 
+ *****************   Calibration iteration number 0 completed ************************ 
+ 
+ 
+ 
+
+ 
+ 
+ *****************   Calibration iteration number 1 started ************************ 
+ 
+ 
+ 
+Parameters unavailable, running calibration!
+
+~~~~~Running TIDL in PC emulation mode to collect Activations range for each layer~~~~~
+
+Processing config file #0 : /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/artifacts/tempDir/detslabels_tidl_io_.qunat_stats_config.txt 
+ Freeing memory for user provided Net
+ ----------------------- TIDL Process with REF_ONLY FLOW ------------------------
+
+#    0 . .. T    2471.00  .... ..... ... .... .....
+#    1 . .. T    2467.46  .... ..... ... .... .....
+#    2 . .. T    2467.24  .... ..... ... .... .....
+#    3 . .. T    2467.08  .... ..... ... .... .....
+#    4 . .. T    2466.28  .... ..... ... .... .....
+ 
+ 
+ *****************   Calibration iteration number 1 completed ************************ 
+ 
+ 
+ 
+
+ 
+ 
+ *****************   Calibration iteration number 2 started ************************ 
+ 
+ 
+ 
+Parameters unavailable, running calibration!
+
+Processing config file #0 : /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/artifacts/tempDir/detslabels_tidl_io_.qunat_stats_config.txt 
+
+~~~~~Running TIDL in PC emulation mode to collect Activations range for each layer~~~~~
+ Freeing memory for user provided Net
+ ----------------------- TIDL Process with REF_ONLY FLOW ------------------------
+
+#    0 . .. T    2472.30  .... ..... ... .... .....
+#    1 . .. T    2469.54  .... ..... ... .... .....
+#    2 . .. T    2473.97  .... ..... ... .... .....
+#    3 . .. T    2471.10  .... ..... ... .... .....
+#    4 . .. T    2467.34  .... ..... ... .... .....
+ 
+ 
+ *****************   Calibration iteration number 2 completed ************************ 
+ 
+ 
+ 
+
+ 
+ 
+ *****************   Calibration iteration number 3 started ************************ 
+ 
+ 
+ 
+Parameters unavailable, running calibration!
+
+~~~~~Running TIDL in PC emulation mode to collect Activations range for each layer~~~~~
+
+Processing config file #0 : /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/artifacts/tempDir/detslabels_tidl_io_.qunat_stats_config.txt 
+ Freeing memory for user provided Net
+ ----------------------- TIDL Process with REF_ONLY FLOW ------------------------
+
+#    0 . .. T    2472.97  .... ..... ... .... .....
+#    1 . .. T    2471.73  .... ..... ... .... .....
+#    2 . .. T    2467.44  .... ..... ... .... .....
+#    3 . .. T    2470.54  .... ..... ... .... .....
+#    4 . .. T    2470.24  .... ..... ... .... .....
+ 
+ 
+ *****************   Calibration iteration number 3 completed ************************ 
+ 
+ 
+ 
+
+ 
+ 
+ *****************   Calibration iteration number 4 started ************************ 
+ 
+ 
+ 
+Parameters unavailable, running calibration!
+
+Processing config file #0 : /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/artifacts/tempDir/detslabels_tidl_io_.qunat_stats_config.txt 
+
+~~~~~Running TIDL in PC emulation mode to collect Activations range for each layer~~~~~
+ Freeing memory for user provided Net
+ ----------------------- TIDL Process with REF_ONLY FLOW ------------------------
+
+#    0 . .. T    2473.03  .... ..... ... .... .....
+#    1 . .. T    2468.80  .... ..... ... .... .....
+#    2 . .. T    2470.30  .... ..... ... .... .....
+#    3 . .. T    2469.77  .... ..... ... .... .....
+#    4 . .. T    2470.40  .... ..... ... .... .....
+ 
+ 
+ *****************   Calibration iteration number 4 completed ************************ 
+ 
+ 
+ 
+Parameters unavailable, running calibration!
+Output network quant params prototxt file path: /opt/EdgeAIRoot/4878386/projects/ad25e250/run/20240611-035238/yolox_nano_lite/compilation/AM68A/work/od-8200/artifacts/tempDir/detslabels_tidl_net_quant_params.prototxt
+
+------------------ Network Compiler Traces -----------------------------
+NC running for device: 1
+Running with OTF buffer optimizations
+Calibrated Quant Parameters stored in protoTxt format
+successful Memory allocation
+INFORMATION: [TIDL_ResizeLayer] /neck/upsample/Resize Any resize ratio which is power of 2 and greater than 4 will be placed by combination of 4x4 resize layer and 2x2 resize layer. For example a 8x8 resize will be replaced by 4x4 resize followed by 2x2 resize.
+INFORMATION: [TIDL_ResizeLayer] /neck/upsample_1/Resize Any resize ratio which is power of 2 and greater than 4 will be placed by combination of 4x4 resize layer and 2x2 resize layer. For example a 8x8 resize will be replaced by 4x4 resize followed by 2x2 resize.
+****************************************************
+**          2 WARNINGS          0 ERRORS          **
+****************************************************
+================================ import model =============
+
+INFO:20240611-040107: import completed  - od-8200 - 170 sec
+
+SUCCESS:20240611-040107: benchmark results - {}
+
+INFO:20240611-040107: running - od-8200
+INFO:20240611-040107: pipeline_config - {'task_type': 'detection', 'dataset_category': 'coco', 'calibration_dataset': <edgeai_benchmark.datasets.modelmaker_datasets.ModelMakerDetectionDataset object at 0x7fd6d9166ce0>, 'input_dataset': <edgeai_benchmark.datasets.modelmaker_datasets.ModelMakerDetectionDataset object at 0x7fd6d848fc10>, 'preprocess': <edgeai_benchmark.preprocess.PreProcessTransforms object at 0x7fd60996d4e0>, 'session': <edgeai_benchmark.sessions.onnxrt_session.ONNXRTSession object at 0x7fd60996d480>, 'postprocess': <edgeai_benchmark.postprocess.PostProcessTransforms object at 0x7fd60996fdc0>, 'metric': {'label_offset_pred': 1}, 'model_info': {'metric_reference': {'accuracy_ap[.5:.95]%': None}, 'model_shortlist': 10}}
+INFO:20240611-040107: infer  - od-8200 - this may take some time...
+infer : od-8200                                             |   0%|          || 0/30 [00:00<?, ?it/s]
+infer : od-8200                                             |          |     0% 0/30| [< ]
+infer : od-8200                                             |  10%|#         || 3/30 [00:11<01:42,  3.81s/it]
+infer : od-8200                                             |  20%|##        || 6/30 [00:22<01:31,  3.81s/it]
+infer : od-8200                                             |  30%|###       || 9/30 [00:34<01:19,  3.81s/it]
+infer : od-8200                                             |  40%|####      || 12/30 [00:45<01:08,  3.81s/it]
+infer : od-8200                                             |  50%|#####     || 15/30 [00:57<00:57,  3.81s/it]
+infer : od-8200                                             |  60%|######    || 18/30 [01:08<00:45,  3.81s/it]
+infer : od-8200                                             |  70%|#######   || 21/30 [01:19<00:34,  3.80s/it]
+infer : od-8200                                             |  80%|########  || 24/30 [01:31<00:22,  3.80s/it]
+infer : od-8200                                             |  90%|######### || 27/30 [01:42<00:11,  3.80s/it]
+infer : od-8200                                             | 100%|##########|| 30/30 [01:54<00:00,  3.80s/it]
+infer : od-8200                                             | 100%|##########|| 30/30 [01:54<00:00,  3.80s/it]
+
+INFO:20240611-040302: infer completed  - od-8200 - 114 sec
+
+SUCCESS:20240611-040302: benchmark results - {'infer_path': 'od-8200', 'accuracy_ap[.5:.95]%': 52.625642, 'accuracy_ap50%': 83.274728, 'num_subgraphs': 1, 'infer_time_core_ms': 3720.200817, 'infer_time_subgraph_ms': 3720.101161, 'ddr_transfer_mb': 0.0, 'perfsim_time_ms': 1.71467, 'perfsim_ddr_transfer_mb': 2.73, 'perfsim_gmacs': 1.458}
