@@ -27,6 +27,8 @@ copy pic_test/bottles.jpg to am68 /tmp by scp/ssh.
 run:  
 cd /opt/edgeai-dl-inferer/tests/test_python  
 python3 app_dl_inferer_test.py -d /opt/model_zoo/ONR-OD-8200-yolox-nano-lite-mmdet-coco-416x416/  -v 0.3 -i /tmp/bottles.jpg  
+Then, you get a jpg file of detection_output0_ONR-OD-8200-yolox-nano-lite-mmdet-coco-416x416.jpg at   
+/opt/edgeai-dl-inferer/tests/test_python  
 ![pic](pic/detection_output0_ONR-OD-8200-yolox-nano-lite-mmdet-coco-416x416.jpg)<br>
 <br>
 
