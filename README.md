@@ -2,7 +2,7 @@
 # TI_SK68_am68_auto_drive
 Using Ti am68 to implement toy car auto drive.  
 Using TI am68 to detect signs for auto driving.  
-
+## Using ONR-OD-8200-yolox-nano and bottle
 I don't konw why I CAN NOT add toy traffic corn to TI_SK68 by web model composer. (2024/04)  
 I try web model composer and ok in 2024/06.
 
@@ -24,6 +24,13 @@ Ti_SK68/SDK9.1 comes with python demo about interence.
 app_dl_inferer_test.py call app_dl_inferer_post_process.py to draw rectangle.  
 Adding some code in app_dl_inferer_post_process.py to output rectangle X1Y1X2Y2.  
 <br>
+
+## Using handmade ad25e250 and orange toy traffic cone
+Made by model composer.(2024/06)  
+### Test
+Copy ad25e250 to /opt/model_zoo/  
+Reboot system  
+The [Custom] Model add item of ad25e250. Run it with Camera / USB Camera 0  
 
 
 # other resource
