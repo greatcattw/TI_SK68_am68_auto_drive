@@ -9,11 +9,11 @@ I try web model composer and ok in 2024/06.
 Work around, short term solution, using small bottle instead of toy traffic corn.  
 The native model, ONR-OD-8200-yolox-nano, is good at detecting bottle.  
 Thus, my plan,  
-(1)The computer runs "wget" to get jpg file from WiFi camera on toy car.   
-(2)The computer asks TI_SK68 to detect all bottles X1Y1X2Y2 in the jpg file.  
-(3)Then computer controls toy car over bluetooth.  
+(1)The am68a runs "wget/curl" to get jpg file from WiFi web camera on toy car.   
+(2)The am68a detect all bottles X1Y1X2Y2 in the jpg file.  
+(3)Then am68a controls toy car by USB-FT232 -> arduino -> PWM -> servo -> motor.  
 <br>
-The command to stop Ti_SK68 demo:  
+The command to stop Ti_SK68 out-of-box demo:  
 /etc/init.d/edgeai-launcher.sh stop  
 <br>
 Ti_SK68/SDK9.1 comes with python demo about inference.  
