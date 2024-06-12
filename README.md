@@ -24,3 +24,24 @@ Adding some code in app_dl_inferer_post_process.py to output rectangle X1Y1X2Y2.
 <br>
 
 
+# other resource
+## disable out-box demo
+/etc/init.d/edgeai-launcher.sh stop  
+sleep 1  
+systemctl stop weston  
+sleep 1  
+echo 0 > /sys/class/graphics/fbcon/cursor_blink  
+dd if=/dev/urandom of=/dev/fb0 bs=7680 count=1080  
+<br>
+## get a picture from usb camera
+gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video-usb-cam0 \  
+! image/jpeg, width=1280, height=720 \  
+! jpegdec \  
+! jpegenc \  
+! filesink location=/home/root/2.jpg  
+<br>
+## show jpg file
+gst-launch-1.0 filesrc location=/home/root/3.jpg \  
+! jpegdec \  
+! imagefreeze \  
+! waylandsink   fullscreen=true  
