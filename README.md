@@ -41,7 +41,7 @@ gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video-usb-cam0 \
 ! filesink location=/home/root/2.jpg  
 <br>
 ## show jpg file
-gst-launch-1.0 filesrc location=/home/root/3.jpg \  
+gst-launch-1.0 filesrc location=/home/root/2.jpg \  
 ! jpegdec \  
 ! imagefreeze \  
 ! waylandsink   fullscreen=true  
