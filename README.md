@@ -3,7 +3,9 @@
 Using Ti am68 to implement toy car auto drive.  
 Using TI am68 to detect signs for auto driving.  
 
-I don't konw why I can not add toy traffic corn to TI_SK68 by web model composer. (2024/04)  
+I don't konw why I CAN NOT add toy traffic corn to TI_SK68 by web model composer. (2024/04)  
+I try web model composer and ok in 2024/06.
+
 Work around, short term solution, using small bottle instead of toy traffic corn.  
 The native model, ONR-OD-8200-yolox-nano, is good at detecting bottle.  
 Thus, my plan,  
