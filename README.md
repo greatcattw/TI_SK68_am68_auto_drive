@@ -13,7 +13,7 @@ Thus, my plan,
 (2)The computer asks TI_SK68 to detect all bottles X1Y1X2Y2 in the jpg file.  
 (3)Then computer controls toy car over bluetooth.  
 
-![pic](pic/pic1.jpg)<br><br><br>
+![pic](pic/detection_output0_ONR-OD-8200-yolox-nano-lite-mmdet-coco-416x416.jpg)<br><br><br>
 
 The command to stop Ti_SK68 demo:  
 /etc/init.d/edgeai-launcher.sh stop  
