@@ -12,9 +12,7 @@ Thus, my plan,
 (1)The computer runs "wget" to get jpg file from WiFi camera on toy car.   
 (2)The computer asks TI_SK68 to detect all bottles X1Y1X2Y2 in the jpg file.  
 (3)Then computer controls toy car over bluetooth.  
-
-![pic](pic/detection_output0_ONR-OD-8200-yolox-nano-lite-mmdet-coco-416x416.jpg)<br><br><br>
-
+<br>
 The command to stop Ti_SK68 demo:  
 /etc/init.d/edgeai-launcher.sh stop  
 <br>
@@ -24,10 +22,18 @@ Ti_SK68/SDK9.1 comes with python demo about inference.
 app_dl_inferer_test.py call app_dl_inferer_post_process.py to draw rectangle.  
 We can add some code in app_dl_inferer_post_process.py to output rectangle X1Y1X2Y2.  
 <br>
+### test
+copy pic_test/bottles.jpg to am68 /tmp by scp/ssh.  
+run:  
+cd /opt/edgeai-dl-inferer/tests/test_python  
+python3 app_dl_inferer_test.py -d /opt/model_zoo/ONR-OD-8200-yolox-nano-lite-mmdet-coco-416x416/  -v 0.3 -i /tmp/bottles.jpg  
+![pic](pic/detection_output0_ONR-OD-8200-yolox-nano-lite-mmdet-coco-416x416.jpg)<br>
+<br>
+
 
 ## Using handmade ad25e250 and orange toy traffic cone
 Made by model composer.(2024/06)  
-### Test
+### test
 Copy ad25e250 to /opt/model_zoo/  
 Reboot system  
 The [Custom] Model add item of ad25e250. Run it with Camera / USB Camera 0  
